@@ -1,9 +1,11 @@
 import React from 'react'
+import carrito from "../icon/carrito.png"
 
 const CartWidget = () => {
   return (
     <div>
-        <span>🛒 0</span>
+      <a href=""><img src={carrito} alt="" style={{width: "45px", height:"35px"}}/> 0</a>
+
     </div>
   )
 }

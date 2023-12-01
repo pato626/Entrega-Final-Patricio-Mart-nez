@@ -5,6 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
 
 
+
 const NavBarComponent = () => {
 
 

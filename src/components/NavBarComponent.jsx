@@ -13,7 +13,7 @@ return (
 
 <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Mi sitio web</Navbar.Brand>
+        <Navbar.Brand href="#home">Rekt</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

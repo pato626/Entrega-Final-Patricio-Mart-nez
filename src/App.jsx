@@ -7,6 +7,21 @@ import './App.css';
 
 function App() {
 
+
+const promesa = new Promise((resolve, reject) => {
+
+  const flag = true;
+  if (flag) {
+    resolve("promesa correctamente cumplida");
+  } else {
+    reject("promesa no cumplida");
+  }
+
+});
+
+promesa.then(res => console.log(res))
+
+
   return (
  <div style={{width: "100vw", height: "100vh"}}>
   <NavBarComponent />

@@ -45,3 +45,10 @@
   font-family: cursive;
   
 }
+
+.tamaño-imagen {
+  border-radius: 15px;
+  border: solid black 2px;
+  width: 150px;
+  height: 150px;
+}

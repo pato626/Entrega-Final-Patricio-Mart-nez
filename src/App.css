@@ -40,15 +40,32 @@
 }
 
 .color {
-  color: #ab47bc;
+  color: #76ff03;
   font-size: 30px;
   font-family: cursive;
   
 }
 
 .tamaño-imagen {
+  
   border-radius: 15px;
   border: solid black 2px;
   width: 150px;
   height: 150px;
+}
+
+.ordenar {
+display: flex;
+align-items: center;
+}
+
+body {
+background-color: #607d8b;
+
+}
+
+.subtitulo {
+  color: #76ff03;
+  font-size: 15px;
+  font-weight: bold;
 }

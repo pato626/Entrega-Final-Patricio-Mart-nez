@@ -2,43 +2,43 @@
     {
         "id": 1,
         "image": "src/assets/images/monster.png",
-        "title": "producto 1",
-        "description": "Fusce consequat. Nulla nisl. Nunc nisl.",
+        "title": "Monster original",
+        "description": "Una bebida energética potente con un sabor audaz y un impulso inigualable.",
         "price": "321"
     },
     {
         "id": 2,
         "image": "src/assets/images/monster2.png",
-        "title": "producto 2",
-        "description": "Etiam vel augue. Aenean sit amet justo. Morbi ut odio.",
+        "title": "Monster amarilla",
+        "description": "Combina ingredientes revolucionarios para ofrecer un estímulo intenso y duradero.",
         "price": "565"
     },
     {
         "id": 3,
         "image": "src/assets/images/monster3.png",
-        "title": "producto 3",
-        "description": "Maecenas tristique. Donec posuere metus vitae ipsum. Aliquam non mauris.",
+        "title": "Monster sandia",
+        "description": "Energía pura enlatada que potencia tus momentos más activos y desafiantes.",
         "price": "287"
     },
     {
         "id": 4,
         "image": "src/assets/images/monster4.png",
-        "title": "producto 4",
-        "description": "Integer ac leo. rutrum ac, lobortis vel, dapibus at, diam.",
+        "title": "Monster violeta",
+        "description": "Diseñada para aquellos que buscan una chispa extra en su día a día.",
         "price": "227"
     },
     {
         "id": 5,
         "image": "src/assets/images/monster5.png",
-        "title": "producto 5",
-        "description": "In eleifend quam a odio. In hac habitasse platea dictumst.",
+        "title": "Monster azul",
+        "description": "La elección de los audaces, proporcionando un estallido de energía cuando más se necesita.",
         "price": "211"
     },
     {
         "id": 6,
         "image": "src/assets/images/gorra.png",
-        "title": "producto 6",
-        "description": "Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+        "title": "Gorra monster",
+        "description": "Complemento esencial para los aficionados, lleva el espíritu Monster con estilo y actitud.",
         "price": "971"
     }
 ]

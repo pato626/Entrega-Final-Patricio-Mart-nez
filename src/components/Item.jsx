@@ -1,13 +1,13 @@
 import React from 'react'
 
 
-const Item = ( {producto} ) => {
+const Item = ({ producto }) => {
     return (
         <div>
-            <img src={producto.image} alt={producto.title} className='tamaño-imagen'/>
-            <h2>{producto.title}</h2>
-            <p>${producto.price}</p>
-            <p>{producto.description}</p>
+            <div><img src={producto.image} alt={producto.title} className='tamaño-imagen' /> </div>
+            <div> <p className='subtitulo'>{producto.title}</p> </div>
+            <div> <p>Precio: ${producto.price}</p></div>
+            <div> <p>{producto.description}</p></div>
 
         </div>
     )

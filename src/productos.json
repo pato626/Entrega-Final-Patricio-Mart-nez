@@ -4,41 +4,47 @@
         "image": "src/assets/images/monster.png",
         "title": "Monster original",
         "description": "Una bebida energética potente con un sabor audaz y un impulso inigualable.",
-        "price": "321"
+        "price": "321",
+        "categoria": "bebidas"
     },
     {
         "id": 2,
         "image": "src/assets/images/monster2.png",
-        "title": "Monster amarilla",
+        "title": "Monster the doctor",
         "description": "Combina ingredientes revolucionarios para ofrecer un estímulo intenso y duradero.",
-        "price": "565"
+        "price": "565",
+        "categoria": "bebidas"
     },
     {
         "id": 3,
         "image": "src/assets/images/monster3.png",
         "title": "Monster sandia",
         "description": "Energía pura enlatada que potencia tus momentos más activos y desafiantes.",
-        "price": "287"
+        "price": "287",
+        "categoria": "bebidas"
     },
     {
         "id": 4,
         "image": "src/assets/images/monster4.png",
         "title": "Monster violeta",
         "description": "Diseñada para aquellos que buscan una chispa extra en su día a día.",
-        "price": "227"
+        "price": "227",
+        "categoria": "bebidas"
     },
     {
         "id": 5,
         "image": "src/assets/images/monster5.png",
         "title": "Monster azul",
         "description": "La elección de los audaces, proporcionando un estallido de energía cuando más se necesita.",
-        "price": "211"
+        "price": "211",
+        "categoria": "bebidas"
     },
     {
         "id": 6,
         "image": "src/assets/images/gorra.png",
         "title": "Gorra monster",
         "description": "Complemento esencial para los aficionados, lleva el espíritu Monster con estilo y actitud.",
-        "price": "971"
+        "price": "971",
+        "categoria": "indumentaria"
     }
 ]

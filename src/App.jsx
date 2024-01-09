@@ -1,10 +1,14 @@
 
-import NavBarComponent from "./components/NavBarComponent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import TitleComponent from "./components/titleComponent";
 import ItemListContainer from "./components/ItemListContainer";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MainLayout from "./layouts/MainLayout";
+
+
+
+
 
 
 
@@ -13,11 +17,14 @@ function App() {
 
   return (
 
- <div>
+ <MainLayout>
   <BrowserRouter>
-  <NavBarComponent />
   <TitleComponent greeting={"¡Bienvenido a la pagina!"} />
   <ItemListContainer />
+  
+  
+  
+  
   <Routes>
     <Route path="/" element={ItemListContainer}           />
     <Route/>
@@ -27,7 +34,7 @@ function App() {
   </Routes>
   </BrowserRouter>
 
- </div>
+ </MainLayout>
   );
 }
 

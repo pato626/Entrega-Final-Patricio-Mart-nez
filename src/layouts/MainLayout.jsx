@@ -1,4 +1,3 @@
-import FooterComponent from "../components/FooterComponent";
 import NavBarComponent from "../components/NavBarComponent";
 
 
@@ -8,7 +7,7 @@ const MainLayout = ({ children }) => {
         <div>
             <NavBarComponent />   
             {children}
-            <FooterComponent />
+
         </div>
     )
 }

@@ -23,15 +23,15 @@ const NavBarComponent = () => {
 
         <Navbar.Brand as={Link} to="/" className='rekt'>Rekt</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse className="subtitulo">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/Productos">Productos</Nav.Link>
-            <NavDropdown title="Menú" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/Detalle">Detalle</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/SobreNosotros">
-                Sobre nosotros
-              </NavDropdown.Item>
+            <Nav.Link as={Link} to="/SobreNosotros">Sobre Nosotros</Nav.Link>
+            <Nav.Link as={Link} to="/Detalle">Detalle</Nav.Link>
+            <NavDropdown title="Productos" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/Productos/Bebidas">Bebidas</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos/Indumentaria">Indumentaria </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">Todos los productos </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

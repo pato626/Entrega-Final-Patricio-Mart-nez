@@ -35,15 +35,12 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
-}
+
 
 .color {
-  text-shadow: #010500 5px 5px  10px;
-  color: #1de9b6;
+  
+  color: #76ff03;
   font-size: 30px;
-  font-family: cursive;
   margin-bottom: 15px;
   
 }
@@ -71,13 +68,15 @@ margin-left: 150px;
 }
 
 body {
-background-color: #23761e;
+background-image: url("../src/assets/images/fondo1.jpeg");
+background-size: cover;
+
 
 }
 
 
 .subtitulo {
-text-shadow: #1de9b6 5px 5px  10px;
+text-shadow: white 5px 5px  10px;
   font-size: 15px;
   font-weight: bold;
  
@@ -96,10 +95,10 @@ margin-bottom: 50px;
 
 
 .descripcion {
-  text-shadow: #1de9b6 5px 5px  10px;
+  color: #1de9b6;
   font-size: 25px;
   text-align: center;
-  font-family: cursive;
+  margin-top:50px;
 
 }
 
@@ -120,10 +119,9 @@ margin-bottom: 50px;
 
 
 
-
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#26272bb2;
 
   font-size:15px;
 

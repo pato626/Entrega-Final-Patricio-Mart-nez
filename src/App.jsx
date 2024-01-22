@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
       <MainLayout />
 
-      <TitleComponent greeting={"¡BIENVENIDO A LA PÁGINA!"} />
+    
 
       <Routes>
         <Route path="/" element={<Inicio />} />

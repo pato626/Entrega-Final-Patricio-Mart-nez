@@ -19,19 +19,21 @@ const NavBarComponent = () => {
 
     <Navbar expand="lg">
 
-      <Container>
+      <Container className='fondo-nav'>
 
-        <Navbar.Brand as={Link} to="/" className='rekt'>Rekt</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/" className='rekt'>REKT</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="subtitulo">
+        <Navbar.Collapse >
+
           <Nav className="me-auto">
-            <Nav.Link as={Link} to="/">Inicio</Nav.Link>
-            <Nav.Link as={Link} to="/SobreNosotros">Sobre Nosotros</Nav.Link>
-            <Nav.Link as={Link} to="/Detalle">Detalle</Nav.Link>
-            <NavDropdown title="Productos" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/Productos/Bebidas">Bebidas</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/Productos/Indumentaria">Indumentaria </NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/Productos">Todos los productos </NavDropdown.Item>
+            <Nav.Link as={Link} to="/">INICIO</Nav.Link>
+            <Nav.Link as={Link} to="/SobreNosotros">SOBRE NOSOTROS</Nav.Link>
+            <Nav.Link as={Link} to="/Detalle">DETALLE</Nav.Link>
+            <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
+              <NavDropdown.Item as={Link} to="/Productos/Bebidas">BEBIDAS</NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos/Indumentaria">INDUMENTARIA </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/Productos">TODOS LOS PRODUCTOS </NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>

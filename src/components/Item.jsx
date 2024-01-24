@@ -6,7 +6,7 @@ const Item = ({ producto }) => {
     return (
         <div>
 
-            <div className='ordenar'>
+            <div className='ordenar subtitulo'>
                 <img src={producto.image} alt={producto.title} className='tamaño-imagen' />
                 <p className='subtitulo'>{producto.title}</p>
                 <p>Precio: ${producto.price}</p>

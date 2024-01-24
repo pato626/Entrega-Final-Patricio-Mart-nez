@@ -4,7 +4,7 @@ import Item from "./Item";
 const ItemList = ({productos, titulo}) => {
   return (
     <div>
-           <h2> {titulo} </h2>
+           <h2 className="title"> {titulo} </h2>
       {
 
         productos.length > 0 &&

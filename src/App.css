@@ -1,5 +1,5 @@
 #root {
-  
+
   text-align: center;
 }
 
@@ -9,9 +9,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -20,6 +22,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -37,71 +40,79 @@
 
 
 
-.color {
-  
-  color: #76ff03;
-  font-size: 30px;
-  margin-bottom: 15px;
-  
-}
-
 .tamaño-imagen {
   border-radius: 68px;
-  background: #23761e;
-  box-shadow:  25px 25px 16px #174d14,
-               -25px -25px 16px #2f9f29;
-  
+  background: #33ff00b4;
+  box-shadow:
+    -25px -25px 16px #2f9f29;
+
   width: 150px;
   height: 150px;
 
 }
 
 .ordenar {
-display:grid;
-grid-template-columns: repeat(7, 200px);
-grid-template-rows: auto;
-margin-bottom: 30px;  
-place-items: center;
-margin-bottom: 50px;
-margin-left: 150px;
+  display: grid;
+  grid-template-columns: repeat(7, 200px);
+  grid-template-rows: auto;
+  margin-bottom: 30px;
+  place-items: center;
+  margin-top: 50px;
+  margin-left: 130px;
 
 }
 
 body {
-background-image: url("../src/assets/images/fondo1.jpeg");
-background-size: cover;
+  background-image: url("../src/assets/images/fondo1.jpeg");
+  background-size: cover;
+
+}
+
+.rekt {
+
+  font-size: 35px;
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+
+}
 
 
+.title {
+  font-size: 35px;
+  font-family: "Rubik Burned", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  margin-top: 40px;
 }
 
 
 .subtitulo {
-text-shadow: white 5px 5px  10px;
+
   font-size: 15px;
   font-weight: bold;
- 
+  color: white;
+
 }
 
 h2 {
-margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 
-.rekt {
-  text-shadow: #1de9b6 5px 5px  10px;
-  font-size: 35px;
-  font-family: "Bebas Neue", sans-serif;
+.fondo-nav {
+  background-color: rgba(255, 255, 255, 0.137);
 }
-
 
 .descripcion {
   color: #1de9b6;
   font-size: 25px;
   text-align: center;
-  margin-top:50px;
+  margin-top: 50px;
 
 }
-
 
 
 .video {
@@ -114,101 +125,93 @@ margin-bottom: 50px;
 
 }
 
+.texto {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(94, 252, 3);
+  margin-top: 30px;
+}
+
+
+.nav-link {
+  color: white;
+}
 
 
 
+.site-footer {
+  background-color: #26272bb2;
 
-
-.site-footer
-{
-  background-color:#26272bb2;
-
-  font-size:15px;
+  font-size: 15px;
 
   color: white;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
+
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5
 }
-.site-footer hr.small
-{
-  margin:20px 0
+
+.site-footer hr.small {
+  margin: 20px 0
 }
-.site-footer h6
-{
-  color:white;
-  font-size:16px;
-  text-transform:uppercase;
-  margin-top:5px;
-  letter-spacing:2px
+
+.site-footer h6 {
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+ 
 }
-.site-footer a
-{
-  color:#737373;
+
+.site-footer a {
+  color: #737373;
 }
-.site-footer a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+
+.site-footer a:hover {
+  color: #3366cc;
+  text-decoration: none;
 }
-.footer-links
-{
-  padding-left:0;
-  list-style:none
+
+.footer-links {
+  padding-left: 0;
+  list-style: none
 }
-.footer-links li
-{
-  display:block
+
+
+
+.footer-links a {
+  color: rgb(44, 230, 20)
 }
-.footer-links a
-{
-  color:white
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  color: #3366cc;
+  text-decoration: none;
 }
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-  color:#3366cc;
-  text-decoration:none;
+
+.footer-links.inline li {
+  display: inline-block
 }
-.footer-links.inline li
-{
-  display:inline-block
-}
-.site-footer .social-icons
-{
-  text-align:right
-}
-.site-footer .social-icons a
-{
-  width:40px;
-  height:40px;
-  line-height:40px;
-  margin-left:6px;
-  margin-right:0;
-  border-radius:100%;
-  background-color:#33353d
-}
-.copyright-text
-{
-  margin:0
-}
-@media (max-width:991px)
-{
-  .site-footer [class^=col-]
-  {
-    margin-bottom:30px
-  }
-}
-@media (max-width:767px)
-{
-  .site-footer
-  {
-    padding-bottom:0
-  }
-  .site-footer .copyright-text,.site-footer
-  {
-    text-align:center
+
+
+
+@media (max-width:991px) {
+  .site-footer [class^=col-] {
+    margin-bottom: 30px
   }
 }
 
+@media (max-width:767px) {
+  .site-footer {
+    padding-bottom: 0
+  }
+
+  .site-footer .copyright-text,
+  .site-footer {
+    text-align: center
+  }
+}

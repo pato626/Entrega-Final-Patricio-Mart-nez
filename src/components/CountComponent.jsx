@@ -1,3 +1,5 @@
+// Lo utilicé en ProductDetail.jsx
+
 // import { useState } from 'react'
 
 // const CountComponent = ( {} ) => {

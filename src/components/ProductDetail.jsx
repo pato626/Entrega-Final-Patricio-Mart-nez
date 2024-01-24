@@ -1,43 +1,48 @@
-import React, { useState } from "react"
-// import CountComponent from "./CountComponent"
+import React, { useContext, useState } from "react"
+import { CartContext } from "../context/CartContext";
+
 
 const ProductDetail = ({ product }) => {
 
-  const [carrito, setCarrito] = useState([])
+  const { carrito, setCarrito } = useContext(CartContext);
+ 
   const [cantidad, setCantidad] = useState(1);
 
 
-    const handleAddCount = () => {
-      setCantidad(cantidad + 1);
-    }
+  const handleAddCount = () => {
+    setCantidad(cantidad + 1);
 
-    const handleRemoveCount = () => {
-      cantidad > 1 && setCantidad(cantidad - 1);
+  }
 
-    }
+  const handleRemoveCount = () => {
+    cantidad > 1 && setCantidad(cantidad - 1);
 
+  }
 
-  const agregarAlCarrito = (product) => {
+  const agregarAlCarrito = () => {
+
     const itemAgregado = { ...product, cantidad };
-    console.log(itemAgregado);
+    setCarrito([...carrito, itemAgregado]);
+
     const nuevoCarrito = [...carrito]
+
     const estaEnElCarrito = nuevoCarrito.find((prod) => prod.id === itemAgregado.id)
+
     if (estaEnElCarrito) {
       estaEnElCarrito.cantidad += cantidad;
-
+  
     } else { nuevoCarrito.push(itemAgregado) }
+  
     setCarrito(nuevoCarrito)
     setCantidad(1)
 
   }
 
-
-
   return (
-    <div>
+    <div className="subtitulo">
       <div className='ordenar'>
         <img src={product.image} alt={product.title} className='tamaño-imagen' />
-        <div> <p className='subtitulo'>{product.title} </p> <p className="subtitulo"> Categoría: </p> {product.category} </div>
+        <div> <p>{product.title} </p> <p> Categoría: </p> {product.category} </div>
         <p>Precio: ${product.price}</p>
         <p>{product.description}</p>
         <div>
@@ -47,7 +52,7 @@ const ProductDetail = ({ product }) => {
           <button onClick={handleRemoveCount}>-</button>
 
         </div>
-        <button onClick={agregarAlCarrito}>comprar</button>
+        <button onClick={agregarAlCarrito}>Agregar al carrito</button>
       </div>
     </div>
   )

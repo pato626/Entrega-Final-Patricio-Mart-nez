@@ -7,7 +7,7 @@ const FooterComponent = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
-                            <h6>Sobre nosotros</h6>
+                            
                             <div>
                             <p className="text-justify"> Para cualquier consulta sobre nuestros productos, no dudes en ponerte en contacto con nosotros. Nuestro equipo de servicio al cliente está disponible para ayudarte en todo momento. Puedes comunicarte con nosotros a través de los siguientes canales: </p>
                             <div>

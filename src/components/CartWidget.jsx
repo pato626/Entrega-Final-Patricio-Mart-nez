@@ -1,12 +1,18 @@
-import React from 'react'
+
 import carrito from "../assets/icon/carrito.png"
+import React, { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
 
 const CartWidget = () => {
+
+  const {cantidadCarrito} = useContext(CartContext);
+
+
   return (
     <div>
+      
+      <div><img src={carrito} alt="" style={{ width: "45px", height: "35px" }}/> {cantidadCarrito()}</div>
      
-      <a href=""><img src={carrito} alt="" style={{width: "45px", height:"35px"}}/> 0</a>
-
     </div>
   )
 }

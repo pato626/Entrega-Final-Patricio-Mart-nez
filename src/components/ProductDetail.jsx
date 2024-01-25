@@ -4,8 +4,8 @@ import { CartContext } from "../context/CartContext";
 
 const ProductDetail = ({ product }) => {
 
-  const { carrito, setCarrito } = useContext(CartContext);
- 
+  const { carrito, agregarAlCarrito } = useContext(CartContext);
+console.log(carrito);
   const [cantidad, setCantidad] = useState(1);
 
 
@@ -19,24 +19,6 @@ const ProductDetail = ({ product }) => {
 
   }
 
-  const agregarAlCarrito = () => {
-
-    const itemAgregado = { ...product, cantidad };
-    setCarrito([...carrito, itemAgregado]);
-
-    const nuevoCarrito = [...carrito]
-
-    const estaEnElCarrito = nuevoCarrito.find((prod) => prod.id === itemAgregado.id)
-
-    if (estaEnElCarrito) {
-      estaEnElCarrito.cantidad += cantidad;
-  
-    } else { nuevoCarrito.push(itemAgregado) }
-  
-    setCarrito(nuevoCarrito)
-    setCantidad(1)
-
-  }
 
   return (
     <div className="subtitulo">
@@ -52,7 +34,7 @@ const ProductDetail = ({ product }) => {
           <button onClick={handleRemoveCount}>-</button>
 
         </div>
-        <button onClick={agregarAlCarrito}>Agregar al carrito</button>
+        <button onClick={() => {agregarAlCarrito(product, cantidad)}}>Agregar al carrito</button>
       </div>
     </div>
   )

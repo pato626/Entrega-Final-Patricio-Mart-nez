@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { productoId } from "./pedirProductos";
 import ProductDetail from "./ProductDetail";
 import { useParams } from "react-router-dom";
-
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase/firebase";
 
 
 const ItemDetailContainer = () => {
@@ -12,17 +12,23 @@ const ItemDetailContainer = () => {
 
 
   useEffect(() => {
-      productoId(Number(id))
+
+    const docRef = doc(db, "productos", id);
+    getDoc(docRef)
       .then((res) => {
-        setProduct(res);
+        setProduct(
+          { ...res.data(), id: res.id }
+        );
       })
-  }, [])
-  
+
+
+  }, [id])
+
 
   return (
     <div>
-     
-     {product && <ProductDetail product={product} /> }
+
+      {product && <ProductDetail product={product} />}
     </div>
   )
 }

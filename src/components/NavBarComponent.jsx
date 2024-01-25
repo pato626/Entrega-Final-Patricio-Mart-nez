@@ -28,16 +28,14 @@ const NavBarComponent = () => {
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">INICIO</Nav.Link>
             <Nav.Link as={Link} to="/SobreNosotros">SOBRE NOSOTROS</Nav.Link>
-            <Nav.Link as={Link} to="/Detalle">DETALLE</Nav.Link>
             <NavDropdown title="PRODUCTOS" id="basic-nav-dropdown">
               <NavDropdown.Item as={Link} to="/Productos/Bebidas">BEBIDAS</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/Productos/Indumentaria">INDUMENTARIA </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/Productos">TODOS LOS PRODUCTOS </NavDropdown.Item>
-
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <CartWidget />
+        <Link to="/Carrito"> <CartWidget /></Link>
       </Container>
     </Navbar>
 

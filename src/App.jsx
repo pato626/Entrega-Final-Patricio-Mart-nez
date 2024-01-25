@@ -8,9 +8,8 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import FooterComponent from './components/FooterComponent';
 import Inicio from './components/Inicio';
 import SobreNosotros from './components/SobreNosotros';
-import { CartContext } from './context/CartContext';
-import { useState } from 'react';
-import CartWidget from './components/CartWidget';
+import { CartProvider } from './context/CartContext';
+import Carrito from './components/Carrito';
 
 
 
@@ -19,34 +18,30 @@ import CartWidget from './components/CartWidget';
 
 
 function App() {
-  
-  const [carrito, setCarrito] = useState([]);
-
-  
 
   return (
 
-  <CartContext.Provider value={ {carrito, setCarrito} }>
-    <BrowserRouter>
-      <MainLayout />
-
-    
-
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/Productos" element={<ItemListContainer />} />
-        <Route path="/Detalle/:id" element={<ItemDetailContainer />} />
-        <Route path="/Productos/:category" element={<ItemListContainer />} />
-        <Route path="/SobreNosotros" element={<SobreNosotros />} />
-        <Route path="/Carrito" element={<CartWidget />} />
-      </Routes>
-
-      <FooterComponent />
+    <CartProvider>
+      <BrowserRouter>
+        <MainLayout />
 
 
-    </BrowserRouter>
 
-    </CartContext.Provider>
+        <Routes>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/Productos" element={<ItemListContainer />} />
+          <Route path="/Detalle/:id" element={<ItemDetailContainer />} />
+          <Route path="/Productos/:category" element={<ItemListContainer />} />
+          <Route path="/SobreNosotros" element={<SobreNosotros />} />
+          <Route path="/Carrito" element={<Carrito />} />
+        </Routes>
+
+        <FooterComponent />
+
+
+      </BrowserRouter>
+
+    </CartProvider>
   );
 }
 

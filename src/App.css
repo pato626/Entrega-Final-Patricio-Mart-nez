@@ -42,9 +42,9 @@
 
 .tamaño-imagen {
   border-radius: 68px;
-  background: #33ff00b4;
+  background: #1ddfae;
   box-shadow:
-    -25px -25px 16px #2f9f29;
+    -25px -25px 16px #11fcfc75;
 
   width: 150px;
   height: 150px;
@@ -78,6 +78,10 @@ body {
 
 }
 
+.m-bottom {
+  margin-bottom: 80px;
+  
+}
 
 .title {
   font-size: 35px;
@@ -125,19 +129,18 @@ h2 {
 
 }
 
-.texto {
-  font-family: "Permanent Marker", cursive;
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(94, 252, 3);
-  margin-top: 30px;
-}
 
+
+.bg-sub {
+ background-color: #11fcfc75;
+ border-radius: 60px;
+}
 
 .finalizar-compra {
   margin-top: 120px;
   margin-left: 800px;
   margin-bottom: 60px;
+  margin-right: 40px;
 }
 
 .vaciar-carrito {
@@ -149,7 +152,19 @@ h2 {
   color: white;
 }
 
+.formulario {
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ 
+}
 
+.input-border {
+  border: 10px solid transparent;
+  border-radius: 60px;
+  box-shadow: 5px 5px #1de9b6;
+  margin-top: 30px;
+}
 
 .site-footer {
   background-color: #26272bb2;
@@ -194,7 +209,7 @@ h2 {
 
 
 .footer-links a {
-  color: rgb(44, 230, 20)
+  color: #11fcfc75;
 }
 
 .footer-links a:active,

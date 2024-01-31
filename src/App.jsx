@@ -10,6 +10,7 @@ import Inicio from './components/Inicio';
 import SobreNosotros from './components/SobreNosotros';
 import { CartProvider } from './context/CartContext';
 import Carrito from './components/Carrito';
+import Checkout from './components/Checkout';
 
 
 
@@ -34,6 +35,7 @@ function App() {
           <Route path="/Productos/:category" element={<ItemListContainer />} />
           <Route path="/SobreNosotros" element={<SobreNosotros />} />
           <Route path="/Carrito" element={<Carrito />} />
+          <Route path="/Checkout" element={<Checkout />} />
         </Routes>
 
         <FooterComponent />
